@@ -1,0 +1,28 @@
+MitakaFixedPoint
+
+This repository is licensed under the Apache License 2.0 (LICENSE). It uses values and short quotations from a
+third-party paper, described below. No code or data file of a third party is included.
+
+Values from ePrint 2026/2521
+============================
+
+Source: Shiduo Zhang, Paul Kirchner, Xiuhan Lin, Yang Yu, "Efficient Fixed-Point Implementation of Mitaka", IACR
+ePrint 2026/2521, 2026.
+
+How they are used:
+
+- Table 2 (p. 9): the parameters of Mitaka-512 and Mitaka-1024 (the security parameter, the ring degree, the NTRU
+  modulus, the trapdoor quality parameter, the smoothing error, the denominators p_u and p_A, the perturbation
+  scaling factor, the widths s and r) are the definitions Params.mitaka512 and Params.mitaka1024
+  (Mitaka/Sampler.lean), eps512 and eps1024 (Mitaka/Table2.lean), and constants of the theorems in
+  Mitaka/Lemma5.lean, Mitaka/Table2.lean, Mitaka/FixedPointCentre.lean, Mitaka/Witness.lean and
+  Mitaka/Headline.lean. The measured failure probabilities per attempt enter the call budgets of the theorems
+  headline_tableRate_mitaka512 and headline_tableRate_mitaka1024 (Mitaka/Headline.lean).
+- Algorithm 4 and Table 4 (p. 12-13): the constants q = 12289, b in {43, 44}, t in {0, 16} and the bounds of
+  Table 4 are the definitions of Mitaka/Algorithm4.lean (Algorithm4.q, Algorithm4.Table4Input).
+- Comments in the Lean files, README.md and LIMITS.md quote short statements of the paper, with page and line
+  numbers, to identify what each Lean statement formalises.
+
+The theorems of this repository are proved in Lean from these values; they are not the paper's proofs, and
+README.md and LIMITS.md state where they differ from the paper's statements. No endorsement of this repository by
+the authors of the paper is claimed or implied.

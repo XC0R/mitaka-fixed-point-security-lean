@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this formalisation, please cite it and the paper it formalises."
+title: "MitakaFixedPoint: kernel-checked Rényi loss of the fixed-point Mitaka sampler"
+authors:
+  - alias: XC0R
+license: Apache-2.0
+repository-code: "https://github.com/XC0R/mitaka-fixed-point-security-lean"
+version: 0.1.0
+date-released: "2026-11-24"
+references:
+  - type: article
+    title: "Efficient Fixed-Point Implementation of Mitaka"
+    authors:
+      - family-names: Zhang
+        given-names: Shiduo
+      - family-names: Kirchner
+        given-names: Paul
+      - family-names: Lin
+        given-names: Xiuhan
+      - family-names: Yu
+        given-names: Yang
+    journal: "IACR Cryptology ePrint Archive"
+    year: 2026
+    notes: "Report 2026/2521"
+    url: "https://eprint.iacr.org/2026/2521"
+  - type: software
+    title: FalconPrecision
+    authors:
+      - alias: XC0R
+    version: 0.4.0
+    url: "https://github.com/XC0R/falcon-fixed-point-security-lean"
+    commit: 1303738996923e3f8ab0989ada7576284064b4c1
+  - type: software
+    title: VCVio
+    authors:
+      - name: "VCVio contributors"
+    url: "https://github.com/Verified-zkEVM/VCVio"
+    commit: f1e63c780de398fb62206dd5890f27e1ad64e0e6
+  - type: software
+    title: Mathlib
+    authors:
+      - name: "The Mathlib Community"
+    url: "https://github.com/leanprover-community/mathlib4"
+    commit: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
